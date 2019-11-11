@@ -1,15 +1,15 @@
 <section class="hero">
-  <div class="flex-container flex-rows fixed-width-lg m-v-lg flex-space-between">
-    <div>
-      <img src="/assets/cdd-logo.svg" alt="Compiler Driven Development" height="100px" />
-    </div>
-    <div>
-      <nav fxLayout="row" dir="rtl" fxLayoutGap="60px">
-        <h1>
-          <img src="/assets/github-white.svg" alt="Compiler Driven Development" height="50px" />
-        </h1>
-        <a href="#">docs</a>
-        <a href="#">download</a>
+  <div fxLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <img src="/assets/cdd-logo.svg" alt="Compiler Driven Development" fxFlex="100"
+           style="height: 100px" [ngStyle.lt-md]="{'height': '20px'}"/>
+      <nav fxLayout="row" dir="rtl" fxLayoutGap="60px" fxFlex>
+        <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="20px">
+          <img fxFlex src="/assets/github-white.svg"
+               alt="Compiler Driven Development" style="height: 50px"/>
+          <a fxFlex href="#">docs</a>
+          <a fxFlex href="#">download</a>
+        </div>
       </nav>
     </div>
   </div>
@@ -18,17 +18,16 @@
     <div>Native development. 100% test coverage. 36x faster.</div>
   </div>
 
-  <div class="flex-container text-center flex-rows flex-center" style="padding-bottom: 200px;">
-    <div class="btn btn-primary m-h-sm">Download</div>
-    <div class="btn btn-secondary m-h-sm">Get Started</div>
+  <div fxLayoutAlign="center center" fxLayout.xs="column" style="padding-bottom: 200px; text-align: center">
+    <div class="btn btn-primary m-h-sm" fxFlex="20%">Download</div>
+    <div class="btn btn-secondary m-h-sm" fxFlex="20%">Get Started</div>
   </div>
-
 </section>
 
 <section class="about center">
   <div class="flex-container flex-cols m-v-lg">
     <div class="hero-image" style="margin-top: -200px;">
-      <img src="/assets/app-hero.png" width="1000px" />
+      <img src="/assets/app-hero.png" width="1000px"/>
     </div>
 
     <div class="flex-container m-v-lg text-size-lg fixed-width-md">
@@ -38,19 +37,19 @@
 
     <div class="flex-container flex-rows flex-center">
       <div class="flex-cols m-h-sm">
-        <img src="/assets/dial-36x.svg" fxLayout="col" />
+        <img src="/assets/dial-36x.svg" fxLayout="col"/>
         <h2>36x faster</h2>
         <div>Experience a huge productivity boost.</div>
       </div>
 
       <div class="flex-cols m-h-sm">
-        <img src="/assets/dial-36x.svg" fxLayout="col" />
+        <img src="/assets/dial-36x.svg" fxLayout="col"/>
         <h2>100% open source</h2>
         <div>Apache or MIT licensed. Totally free.</div>
       </div>
 
       <div class="flex-cols m-h-sm">
-        <img src="/assets/dial-36x.svg" fxLayout="col" />
+        <img src="/assets/dial-36x.svg" fxLayout="col"/>
         <h2>AST Driven</h2>
         <div>Each language is natively traversed via ast adaptors.</div>
       </div>
@@ -62,25 +61,28 @@
 <section class="">
   <div class="flex-container flex-rows fixed-width-lg m-v-lg flex-space-between">
     <div style="width:50%; padding-right:30px">
-      <img src="/assets/cdd-diagram.svg" width="100%" />
+      <img src="/assets/cdd-diagram.svg" width="100%"/>
     </div>
     <div style="width:50%;">
       <div class="text-bold text-size-md">AST Driven</div>
-      <p>The key differentiator in our approach, is that we explicitly and statically traverse the AST of each language, in each language, then code-generate merged changes.</p>
+      <p>The key differentiator in our approach, is that we explicitly and statically traverse the AST of each language,
+        in each language, then code-generate merged changes.</p>
 
       <div class="text-bold text-size-md">Design Patterns</div>
-      <p>Develop functionally, reactively, or following Google / Apple / Dropbox / Facebook standards? - Support your directory layout, paradigm, and frameworks.</p>
+      <p>Develop functionally, reactively, or following Google / Apple / Dropbox / Facebook standards? - Support your
+        directory layout, paradigm, and frameworks.</p>
 
       <div class="text-bold text-size-md">Open Source</div>
-      <p>(Apache-2.0 OR MIT) licensed, enabling maximum integration with any of your systems, e.g. IDEs, and version control systems (with CI/CD pipelines).</p>
+      <p>(Apache-2.0 OR MIT) licensed, enabling maximum integration with any of your systems, e.g. IDEs, and version
+        control systems (with CI/CD pipelines).</p>
     </div>
   </div>
 </section>
 
 <section class="case_study p-v-lg">
   <div class="flex-container text-center flex-cols flex-center">
-      <div class="m-v-md text-size-lg">Become our case study!</div>
-      <a href="https://offscale.io" class="btn btn-primary m-v-md">get in touch</a>
+    <div class="m-v-md text-size-lg">Become our case study!</div>
+    <a href="https://offscale.io" class="btn btn-primary m-v-md">get in touch</a>
   </div>
 </section>
 
@@ -90,7 +92,7 @@
       <img src="/assets/logo-offscale.svg" alt="Offscale">
     </div>
     <div class="">
-      copyright 2018-2019 offscale pty ltd
+      &copy; 2018&ndash;2019 Sydney Scientific Pty Ltd
     </div>
   </div>
 </footer>
