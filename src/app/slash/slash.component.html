@@ -1,74 +1,96 @@
-<section class="container" style="margin-bottom: 2rem">
-  <div fxLayout="column" class="card center" fxLayoutGap="20px"
-       fxLayoutAlign="center" style="margin-bottom: 0; border-bottom: none; border-top: none; border-radius: unset">
-    <h1>Stop using <em>React Native</em>, <em>Xamarin</em>, <em>Flutter</em>, <em>Ionic</em>, <em>NativeScript</em> or <em>Cordova</em>. <span class="nowrap">Develop natively.</span>
-    </h1>
-
-    <h1>36&times; faster development of iOS, Android, web, and RESTful APIs.
-      <span class="nowrap">Native Development.</span>
-    </h1>
-  </div>
-
-  <div fxLayout="row" fxLayout.xs="column" class="card center" fxLayoutGap="20px"
-       style="border-top: none; border-radius: 0 0 4px 4px;">
-    <div fxFlex="25%">
-      <!--<app-svg-viewer src="/assets/typescript.svg"></app-svg-viewer>-->
-      <img src="/assets/typescript.png" alt="TypeScript"/>
-      <h2>web</h2>
-      <h3>TypeScript &amp; HTML</h3>
-      <p>Full support for the TypeScript syntax.</p>
+<section class="hero">
+  <div class="flex-container flex-rows fixed-width-lg m-v-lg flex-space-between">
+    <div>
+      <img src="/assets/cdd-logo.svg" alt="Compiler Driven Development" height="100px" />
     </div>
-
-    <div fxFlex="25%">
-      <!--<app-svg-viewer src="/assets/swift.svg"></app-svg-viewer>-->
-      <img src="/assets/swift.png" alt="Swift"/>
-      <h2>iOS</h2>
-      <h3>Swift</h3>
-      <p>Full support for the Swift syntax.</p>
-    </div>
-
-    <div fxFlex="25%">
-      <!--<app-svg-viewer src="/assets/android.svg"></app-svg-viewer>-->
-      <img src="/assets/android.png" alt="Android"/>
-      <h2>Android</h2>
-      <h3>Java or Kotlin</h3>
-      <p>Full support for both Java and Kotlin syntax.</p>
-    </div>
-
-    <div fxFlex="25%">
-      <!--<app-svg-viewer src="/assets/rust.svg"></app-svg-viewer>-->
-      <img src="/assets/rust.png" alt="Rust"/>
-      <h2>Backend (REST API)</h2>
-      <h3>Rust</h3>
-      <p>Support for Actix and Diesel macros, and all non-macro Rust syntax.</p>
+    <div>
+      <nav fxLayout="row" dir="rtl" fxLayoutGap="60px">
+        <h1>
+          <img src="/assets/github-white.svg" alt="Compiler Driven Development" height="50px" />
+        </h1>
+        <a href="#">docs</a>
+        <a href="#">download</a>
+      </nav>
     </div>
   </div>
+
+  <div class="flex-container text-size-xl text-center m-v-lg">
+    <div>Native development. 100% test coverage. 36x faster.</div>
+  </div>
+
+  <div class="flex-container text-center flex-rows flex-center" style="padding-bottom: 200px;">
+    <div class="btn btn-primary m-h-sm">Download</div>
+    <div class="btn btn-secondary m-h-sm">Get Started</div>
+  </div>
+
 </section>
 
-<section class="container">
-  <div fxLayout="row" fxLayout.xs="column" class="card center" fxLayoutGap="20px">
-    <div fxFlex>
-      <h2>Abstract Syntax Tree (AST)</h2>
+<section class="about center">
+  <div class="flex-container flex-cols m-v-lg">
+    <div class="hero-image" style="margin-top: -200px;">
+      <img src="/assets/app-hero.png" width="1000px" />
+    </div>
+
+    <div class="flex-container m-v-lg text-size-lg fixed-width-md">
+      Stop using React Native, Flutter, etc.
+      Write once, compile Everywhere.
+    </div>
+
+    <div class="flex-container flex-rows flex-center">
+      <div class="flex-cols m-h-sm">
+        <img src="/assets/dial-36x.svg" fxLayout="col" />
+        <h2>36x faster</h2>
+        <div>Experience a huge productivity boost.</div>
+      </div>
+
+      <div class="flex-cols m-h-sm">
+        <img src="/assets/dial-36x.svg" fxLayout="col" />
+        <h2>100% open source</h2>
+        <div>Apache or MIT licensed. Totally free.</div>
+      </div>
+
+      <div class="flex-cols m-h-sm">
+        <img src="/assets/dial-36x.svg" fxLayout="col" />
+        <h2>AST Driven</h2>
+        <div>Each language is natively traversed via ast adaptors.</div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="">
+  <div class="flex-container flex-rows fixed-width-lg m-v-lg flex-space-between">
+    <div style="width:50%; padding-right:30px">
+      <img src="/assets/cdd-diagram.svg" width="100%" />
+    </div>
+    <div style="width:50%;">
+      <div class="text-bold text-size-md">AST Driven</div>
       <p>The key differentiator in our approach, is that we explicitly and statically traverse the AST of each language, in each language, then code-generate merged changes.</p>
-    </div>
 
-    <div fxFlex>
-      <h2>Design Patterns (also BYO)</h2>
-      <p>Develop functionally, reactively, or following Google/Apple/Dropbox/Facebook standards? - Support your directory layout, paradigm, and frameworks.</p>
-    </div>
+      <div class="text-bold text-size-md">Design Patterns</div>
+      <p>Develop functionally, reactively, or following Google / Apple / Dropbox / Facebook standards? - Support your directory layout, paradigm, and frameworks.</p>
 
-    <div fxFlex>
-      <h2>Open-source</h2>
-      <p>(Apache-2.0 OR MIT) licensed, enabling maximum integration with any of your systems, e.g.: IDEs, and version
-        control systems (with CI/CD pipelines).</p>
+      <div class="text-bold text-size-md">Open Source</div>
+      <p>(Apache-2.0 OR MIT) licensed, enabling maximum integration with any of your systems, e.g. IDEs, and version control systems (with CI/CD pipelines).</p>
     </div>
   </div>
 </section>
 
-<section class="container">
-  <div fxLayout="row" fxLayout.xs="column" class="card center" fxLayoutGap="20px">
-    <div fxFlex>
-      <h1>Become our case study! - Get in touch today</h1>
-    </div>
+<section class="case_study p-v-lg">
+  <div class="flex-container text-center flex-cols flex-center">
+      <div class="m-v-md text-size-lg">Become our case study!</div>
+      <a href="https://offscale.io" class="btn btn-primary m-v-md">get in touch</a>
   </div>
 </section>
+
+<footer>
+  <div class="flex-container flex-rows fixed-width-lg p-v-lg flex-space-between">
+    <div class="flex-cols">
+      <img src="/assets/logo-offscale.svg" alt="Offscale">
+    </div>
+    <div class="">
+      copyright 2018-2019 offscale pty ltd
+    </div>
+  </div>
+</footer>
