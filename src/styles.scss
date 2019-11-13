@@ -12,12 +12,22 @@ body {
   line-height: 1.5;
 }
 
+section, footer {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer {
+  background-color: #FF6A00;
+  color:white;
+  line-height: 100px;
+}
+
 .hero {
   background: #460665 url('/assets/bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 25px 0px;
   color: white;
   font-weight: bold;
 }
@@ -25,12 +35,6 @@ body {
 .case_study {
   background-color: #220066;
   color:white;
-}
-
-footer {
-  background-color: #FF6A00;
-  color:white;
-  line-height: 100px;
 }
 
 .fixed-width-lg {
@@ -63,6 +67,19 @@ footer {
   flex-direction: column;
 }
 
+@media (min-width: 1000px) {
+  .desktop-flex-rows {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .desktop-flex-cols {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .flex-center {
   justify-content: center;
   align-items: center;
@@ -79,6 +96,12 @@ footer {
 .text-size-xl {
   font-weight: bold;
   font-size: 48px;
+}
+@media (max-width: 400px) {
+  .text-size-xl {
+    font-weight: bold;
+    font-size: 38px;
+  }
 }
 
 .text-size-lg {
@@ -99,10 +122,10 @@ footer {
 }
 
 .btn {
-  width: 200px;
+  width: 100%;
   border-radius: 100px;
   line-height: 70px;
-  min-width: 350px;
+  max-width: 350px;
   font-size: 20px;
   font-weight: bold;
 }
