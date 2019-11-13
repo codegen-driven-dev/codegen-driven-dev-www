@@ -1,4 +1,19 @@
-# CompilersWww
+compilers.com.au
+================
+Bunch of guides for Compiler Driven Development (CDD).
+
+## Build dist
+
+    rm -rf dist; ng build --prod && d=../codegen-driven-dev.github.io && rm -rf "$d/dist" && mv "$PWD/dist" "$d" && cd "$d" && (git add .; git status) || ( >&2 echo BUILD FAILED )
+
+## Install
+
+Assumes you have latest Node.JS and npm on *nix machine, then just run:
+
+    npm i -g @angular/cli typescript
+    npm i
+
+---
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
