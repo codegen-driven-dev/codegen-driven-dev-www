@@ -2,9 +2,12 @@ compilers.com.au
 ================
 Bunch of guides for Compiler Driven Development (CDD).
 
-## Build dist
+## Deploy distribution
+First [`npm i -g angular-cli-ghpages`](https://github.com/angular-schule/angular-cli-ghpages), then:
 
-    rm -rf dist; ng build --prod && d=../codegen-driven-dev.github.io && rm -rf "$d/dist" && mv "$PWD/dist" "$d" && cd "$d" && (git add .; git status) || ( >&2 echo BUILD FAILED )
+    ng build --prod
+    cp README.md dist/compilers-www
+    ngh --dir='dist/compilers-www' --repo='https://github.com/codegen-driven-dev/codegen-driven-dev.github.io' --branch='master' --message="$(git log -1 --pretty='%B')"
 
 ## Install
 
