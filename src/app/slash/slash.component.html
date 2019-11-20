@@ -34,8 +34,11 @@
 
 <section class="about center">
   <div class="flex-container flex-cols m-v-lg">
-    <div class="hero-image" style="margin-top: -200px;">
-      <img src="/assets/app-hero.png" width="100%"/>
+    <div class="hero-image" style="margin-top: -200px;" [innerHtml]="safeHtml" *ngIf="safeHtml">
+      <!--<img src="/assets/app-hero.png" width="100%"/>-->
+      <a href="https://asciinema.org/a/pziMJGIXpuyuXufMMhemZXIUD" target="_blank">
+        <img src="https://asciinema.org/a/pziMJGIXpuyuXufMMhemZXIUD.svg"/>
+      </a>
     </div>
 
     <div class="flex-container m-v-lg text-size-lg fixed-width-md">
