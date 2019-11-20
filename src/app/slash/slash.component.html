@@ -1,34 +1,34 @@
 <section class="hero">
   <div class="flex-container desktop-flex-rows fixed-width-lg p-v-lg flex-space-between">
     <div>
-      <img src="/assets/cdd-logo.svg"
-           alt="Compiler Driven Development"
-           height="100px"
-           style="width: 100%"/>
+      <a routerLink="/">
+        <img src="/assets/cdd-logo.svg"
+             alt="Compiler Driven Development"
+             height="100px"
+             style="width: 100%"/>
+      </a>
     </div>
-    <div>
-      <nav class="desktop-flex-rows mobile-hide" dir="rtl" fxLayoutGap="60px">
-        <h1>
-          <a href="https://github.com/offscale">
-            <img src="/assets/github-white.svg"
-                 alt="GitHub repos for Compiler Driven Development"
-                 height="50px"/>
-          </a>
-        </h1>
-        <a href="#">docs</a>
-        <a href="#">download</a>
-      </nav>
-    </div>
+    <nav fxHide.lt-md fxLayout="row" fxLayoutGap="20px">
+      <a href="#" fxFlex>docs</a>
+      <a href="#" fxFlex>download</a>
+      <h1 fxFlex>
+        <a href="https://github.com/offscale">
+          <img src="/assets/github-white.svg"
+               alt="GitHub repos for Compiler Driven Development"
+               height="50px"/>
+        </a>
+      </h1>
+    </nav>
   </div>
 
   <div class="flex-container text-size-xl text-center m-v-lg">
     <div>Native development. 100% test coverage. 36x faster.</div>
   </div>
 
-  <div class="flex-container text-center flex-rows flex-center"
+  <div class="text-center" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px"
        style="padding-bottom: 200px;">
-    <a href="#" class="btn btn-primary m-h-sm">Download</a>
-    <a href="#" class="btn btn-secondary m-h-sm">Get Started</a>
+    <a href="#" class="btn btn-primary" fxFlex>Download</a>
+    <a href="#" class="btn btn-secondary" fxFlex>Get Started</a>
   </div>
 </section>
 
@@ -42,21 +42,21 @@
       Stop using React Native, Flutter, etc. Write once, compile Everywhere.
     </div>
 
-    <div class="flex-container desktop-flex-rows flex-center">
-      <div class="flex-cols m-h-sm">
-        <img src="/assets/dial-36x.svg" fxLayout="col"/>
+    <div fxLayout="row" fxLayout.lt-md="column">
+      <div fxFlex>
+        <img src="/assets/dial-36x.svg"/>
         <h2>36&times; faster</h2>
         <div>Experience a huge productivity boost.</div>
       </div>
 
-      <div class="flex-cols m-h-sm">
-        <img src="/assets/dial-heart.svg" fxLayout="col"/>
+      <div fxFlex>
+        <img src="/assets/dial-heart.svg" />
         <h2>100% open source</h2>
         <div>Apache or MIT licensed. Totally free.</div>
       </div>
 
-      <div class="flex-cols m-h-sm">
-        <img src="/assets/dial-gear.svg" fxLayout="col"/>
+      <div fxFlex>
+        <img src="/assets/dial-gear.svg"/>
         <h2>AST Driven</h2>
         <div>Each language is natively traversed via ast adaptors.</div>
       </div>
@@ -97,7 +97,7 @@
 <section class="case_study p-v-lg">
   <div class="flex-container text-center flex-cols flex-center">
     <div class="m-v-md text-size-lg">Become our case study!</div>
-    <a href="https://offscale.io" class="btn btn-primary m-v-md">
+    <a href="mailto:samuel@offscale.io" class="btn btn-primary m-v-md">
       get in touch
     </a>
   </div>
@@ -111,7 +111,7 @@
       </a>
     </div>
     <div class="mobile-hide">
-      &copy; 2018&ndash;2019 offscale
+      &copy; 2018&ndash;2019 <a href="https://offscale.io">offscale</a>
     </div>
   </div>
 </footer>
