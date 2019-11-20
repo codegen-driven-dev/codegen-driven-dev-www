@@ -50,7 +50,7 @@
       </div>
 
       <div fxFlex>
-        <img src="/assets/dial-heart.svg" />
+        <img src="/assets/dial-heart.svg"/>
         <h2>100% open source</h2>
         <div>Apache or MIT licensed. Totally free.</div>
       </div>
@@ -103,15 +103,13 @@
   </div>
 </section>
 
-<footer>
-  <div class="flex-container flex-rows fixed-width-lg p-v-lg flex-space-between">
-    <div class="desktop-flex-cols">
-      <a href="https://offscale.io/">
-        <img src="/assets/logo-offscale.svg" alt="Offscale"/>
-      </a>
-    </div>
-    <div class="mobile-hide">
-      &copy; 2018&ndash;2019 <a href="https://offscale.io">offscale</a>
-    </div>
+<footer fxLayout="row" fxLayoutAlign="center center"
+        style="padding: 40px 0 40px 90px" ngStyle.lt-md="{'padding': 0 40px}"
+        class="text-center">
+  <a href="https://offscale.io/" fxFlex>
+    <app-svg-viewer fxFlex src="/assets/logo-offscale.svg"></app-svg-viewer>
+  </a>
+  <div class="mobile-hide" fxFlex>
+    &copy; 2018&ndash;2019 <a href="https://offscale.io">offscale</a>
   </div>
 </footer>

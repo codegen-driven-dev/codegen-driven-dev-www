@@ -6,13 +6,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { SlashComponent } from './slash.component';
 import { slashRoutes } from './slash.routes';
+import { SvgViewerModule } from '../svg-viewer/svg-viewer.module';
 
 
 @NgModule({
   declarations: [SlashComponent],
   imports: [
     CommonModule, RouterModule, RouterModule.forChild(slashRoutes),
-    FlexLayoutModule
+    FlexLayoutModule, SvgViewerModule
   ]
 })
 export class SlashModule {}
