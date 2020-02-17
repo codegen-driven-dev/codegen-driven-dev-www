@@ -1,0 +1,23 @@
+<section fxLayout="column" class="hero">
+  <div fxFlex fxLayout="row" style="padding-top: 20px">
+    <a fxFlex="50" routerLink="/">
+      <img src="/assets/cdd-logo.svg"
+           alt="Compiler Driven Development"
+           height="100px"
+           style="width: 100%"/>
+    </a>
+    <nav fxFlex="50" fxHide.lt-md fxLayout="row" fxLayoutGap="20px" class="center">
+      <a href="#" fxFlex>about</a>
+      <a routerLink="/presentations" fxFlex>presentations</a>
+      <a href="#" fxFlex>docs</a>
+      <a href="#" fxFlex>download</a>
+      <a fxFlex href="https://github.com/offscale">
+        <img src="/assets/github-white.svg"
+             alt="GitHub repos for Compiler Driven Development"
+             height="50px"/>
+      </a>
+    </nav>
+  </div>
+
+  <ng-content fxFlex></ng-content>
+</section>

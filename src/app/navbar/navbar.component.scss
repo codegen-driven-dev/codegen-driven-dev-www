@@ -1,0 +1,20 @@
+.hero {
+  background: #460665 url("/assets/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:link {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  line-height: 80px;
+  font-size: 20px;
+}
+
+nav a:visited {
+  color: white;
+}
