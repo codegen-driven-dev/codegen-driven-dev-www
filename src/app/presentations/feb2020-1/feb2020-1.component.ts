@@ -8,6 +8,6 @@ import { SlidesComponent } from '../../slides/slides.component';
 })
 export class Feb2020Component extends SlidesComponent implements AfterContentInit {
   ngAfterContentInit() {
-    this.totalSlides = 20;
+    this.totalSlides = 30;
   }
 }
