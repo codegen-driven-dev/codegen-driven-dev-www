@@ -124,3 +124,9 @@ p {
 h2 {
   margin-bottom: 10px;
 }
+
+.narrow {
+  /* top | right | bottom | left */
+  margin: 0;
+  padding: 0 50% 0 50%;
+}

@@ -1,12 +1,13 @@
 <section fxLayout="column" class="hero">
-  <div fxFlex fxLayout="row" style="padding-top: 20px">
-    <a fxFlex="50" routerLink="/">
+  <div fxFlex fxLayout="row" ngStyle.gt-sm="padding-top: 20px" ngStyle.lt-md="padding-top: 0">
+    <a fxFlex.gt-md="50" routerLink="/">
       <img src="/assets/cdd-logo.svg"
            alt="Compiler Driven Development"
            height="100px"
+           ngStyle.lt-md="width: 95%"
            style="width: 100%"/>
     </a>
-    <nav fxFlex="50" fxHide.lt-md fxLayout="row" fxLayoutGap="20px" class="center">
+    <nav fxFlex.gt-md="50" fxHide.lt-md fxLayout="row" fxLayoutGap="20px" class="center">
       <a href="#" fxFlex>about</a>
       <a routerLink="/presentations" fxFlex>presentations</a>
       <a href="#" fxFlex>docs</a>
