@@ -1,6 +1,6 @@
 compilers.com.au
 ================
-[![Build Status](https://travis-ci.org/codegen-driven-dev/www.svg?branch=master)](https://travis-ci.org/codegen-driven-dev/www)
+![GitHub Pages](https://github.com/codegen-driven-dev/www/workflows/GitHub%20Pages/badge.svg)
 
 Bunch of guides for Compiler Driven Development (CDD).
 
