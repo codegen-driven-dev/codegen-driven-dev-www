@@ -24,7 +24,7 @@ jobs:
           npm i -g @angular/cli typescript angular-cli-ghpages
           npm ci
           ng build --prod
-          cp README.md dist/samuel-marks-www
+          cp README.md dist/compilers-www
           MSG="$(git show -s --format='%s' "$GITHUB_SHA")"
           email_author="$(git log -1 --pretty=format:'%an <%ce>')"
           author="${email_author% *}"
