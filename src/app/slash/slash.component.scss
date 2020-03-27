@@ -10,29 +10,16 @@ footer {
   line-height: 100px;
 }
 
-.hero {
-  background: #460665 url("/assets/bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  font-weight: bold;
-}
-
 .case_study {
   background-color: #220066;
   color: white;
-}
-
-.center {
-  text-align: center;
 }
 
 .text-size-xl {
   font-weight: bold;
   font-size: 48px;
 }
-@media (max-width: 400px) {
+@media screen and (max-width: 599px) {
   .text-size-xl {
     font-weight: bold;
     font-size: 38px;
@@ -104,29 +91,10 @@ footer {
   margin-right: 10px;
 }
 
-.m-h-sm {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-nav a:link {
-  color: white;
-  text-decoration: none;
-  font-weight: normal;
-  line-height: 80px;
-  font-size: 20px;
-}
-
 p {
   margin-top: 0;
 }
 
 h2 {
   margin-bottom: 10px;
-}
-
-.narrow {
-  /* top | right | bottom | left */
-  margin: 0;
-  padding: 0 50% 0 50%;
 }
