@@ -1,41 +1,41 @@
 <app-navbar>
-  <section fxFlex fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center" style="padding: 20px">
+  <section fxFlex="auto" fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center" style="padding: 20px">
     <div fxFlex="100" class="text-size-xl text-center m-v-lg">
       Native development. 100% test coverage. 36x faster.
     </div>
 
     <div class="text-center" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="20px"
          style="padding-bottom: 200px;">
-      <a href="#" class="btn btn-primary" fxFlex>Download</a>
-      <a href="#" class="btn btn-secondary" fxFlex>Get Started</a>
+      <a href="#" class="btn btn-primary" fxFlex="auto">Download</a>
+      <a href="#" class="btn btn-secondary" fxFlex="auto">Get Started</a>
     </div>
   </section>
 </app-navbar>
 
 <div fxLayout="column" ngStyle.gt-xs="margin: 0 15% 0 15%;" ngStyle.lt-sm="margin: 0">
-  <section class="hero-image" style="margin-top: -200px" [innerHtml]="safeHtml" *ngIf="safeHtml" fxFlex>
+  <section class="hero-image" style="margin-top: -200px" [innerHtml]="safeHtml" *ngIf="safeHtml" fxFlex="auto">
   </section>
 
-  <section class="m-v-lg text-size-lg" fxFlex>
+  <section class="m-v-lg text-size-lg" fxFlex="auto">
     Stop using React Native, Flutter, etc. Write in one language; translate to others.
   </section>
 
 
-  <section class="about text-center m-v-lg" fxFlex fxLayout="row">
-    <div fxLayout="row" fxLayout.lt-md="column" fxFlex>
-      <div fxFlex>
+  <section class="about text-center m-v-lg" fxFlex="auto" fxLayout="row">
+    <div fxLayout="row" fxLayout.lt-md="column" fxFlex="auto">
+      <div fxFlex="auto">
         <img src="/assets/dial-36x.svg" alt="exponential speedup"/>
         <h2>36&times; faster</h2>
         <div>Experience a huge productivity boost.</div>
       </div>
 
-      <div fxFlex>
+      <div fxFlex="auto">
         <img src="/assets/dial-heart.svg" alt="open-source"/>
         <h2>100% open source</h2>
         <div>(Apache OR MIT) licensed. Totally free.</div>
       </div>
 
-      <div fxFlex>
+      <div fxFlex="auto">
         <img src="/assets/dial-gear.svg" alt="AST level"/>
         <h2>AST Driven</h2>
         <div>Each language is natively traversed via ast adaptors.</div>
@@ -43,7 +43,7 @@
     </div>
   </section>
 
-  <section class="m-v-lg" fxFlex fxLayout="row" fxLayoutAlign="center center" fxFlexAlign="center center"
+  <section class="m-v-lg" fxFlex="auto" fxLayout="row" fxLayoutAlign="center center" fxFlexAlign="center center"
            fxLayout.lt-md="column">
     <img fxFlex.gt-sm="50" src="/assets/cdd-diagram.svg" style="width: 80%" alt="CDD flow"/>
     <div fxFlex.gt-sm="45" style="height: 100%; width: 100%;"
@@ -84,10 +84,10 @@
 <footer fxLayout="row" fxLayoutAlign="center center" fxLayout.lt-md="column"
         style="padding: 40px 0 40px 90px" ngStyle.lt-md="{'padding': 0 40px}"
         class="text-center">
-  <a href="https://offscale.io/" fxFlex>
-    <app-svg-viewer fxFlex src="/assets/logo-offscale.svg"></app-svg-viewer>
+  <a href="https://offscale.io/" fxFlex="auto">
+    <app-svg-viewer fxFlex="auto" src="/assets/logo-offscale.svg"></app-svg-viewer>
   </a>
-  <div fxFlex>
+  <div fxFlex="auto">
     &copy; 2018&ndash;2020 <a href="https://offscale.io">offscale</a>
   </div>
 </footer>

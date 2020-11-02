@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { SlidesComponent } from './slides/slides.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { SlidesComponent } from './slides/slides.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NavbarModule
+    NavbarModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
