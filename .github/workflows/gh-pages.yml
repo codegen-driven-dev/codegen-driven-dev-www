@@ -22,6 +22,7 @@ jobs:
         run: |
           npm i -g npm
           npm i -g @angular/cli typescript angular-cli-ghpages
+          ng add angular-cli-ghpages
           npm ci
           ng build --prod
           cp README.md dist/compilers-www
@@ -31,4 +32,4 @@ jobs:
           git config --global user.name "$author"
           email="${email_author#*<}"; email="${email::-1}"
           git config --global user.email "$email"
-          ngh --cname='compilers.com.au' --dir='dist/compilers-www' --repo='https://'"$GITHUB_TOKEN"'@github.com/codegen-driven-dev/codegen-driven-dev.github.io' --branch='master' --message="$MSG"
+          ng deploy --cname='compilers.com.au' --dir='dist/compilers-www' --repo='https://'"$GITHUB_TOKEN"'@github.com/codegen-driven-dev/codegen-driven-dev.github.io' --branch='master' --message="$MSG" --name="$name" --email="$email" --no-silent
