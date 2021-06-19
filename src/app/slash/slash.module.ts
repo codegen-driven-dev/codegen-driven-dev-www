@@ -8,13 +8,14 @@ import { SlashComponent } from './slash.component';
 import { slashRoutes } from './slash.routes';
 import { SvgViewerModule } from '../svg-viewer/svg-viewer.module';
 import { NavbarModule } from '../navbar/navbar.module';
+import {FooterModule} from '../footer/footer.module';
 
 
 @NgModule({
   declarations: [SlashComponent],
     imports: [
         CommonModule, RouterModule, RouterModule.forChild(slashRoutes),
-        FlexLayoutModule, SvgViewerModule, NavbarModule
+        FlexLayoutModule, SvgViewerModule, NavbarModule, FooterModule
     ]
 })
 export class SlashModule {}

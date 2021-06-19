@@ -1,0 +1,50 @@
+<app-navbar>
+</app-navbar>
+
+<div style="margin: 0 15% 0 15%;">
+  <h3>Theory</h3>
+  <em>Research paper forthcoming.</em>
+</div>
+
+<div style="margin: 0 15% 0 15%;" fxLayout="row" fxLayoutAlign="center center" fxFlexAlign="center center"
+     fxLayout.lt-md="column">
+  <div fxFlex="auto">
+    <h3>Implementation</h3>
+    <p>
+      Every language in your system does one or more of:
+    </p>
+    <ul>
+      <li>Persist to database / filesystem</li>
+      <li>Validate input</li>
+      <li>De/serialise</li>
+      <li>Test&mdash;incl. mock&mdash;input and output</li>
+      <li>Document interfaces</li>
+    </ul>
+    <p>
+      Different languages&mdash;and frameworks&mdash;have different strength type systems, but in general one can:
+    </p>
+    <ol>
+      <li>Traverse the <a target="_blank" href="https://en.wikipedia.org/wiki/Abstract_syntax_tree">Abstract Syntax Tree
+        (AST)</a></li>
+      <li>Extract pertinent information</li>
+      <li>Generate <a target="_blank" href="https://en.wikipedia.org/wiki/OpenAPI_Specification">OpenAPI</a> JSON/YAML
+      </li>
+    </ol>
+    <p>Inversely, one can:</p>
+    <ol>
+      <li>Traverse the OpenAPI hierarchy</li>
+      <li>Extract pertinent information</li>
+      <li>Parse existing source and merge new information (if exists) else generate; to/from the AST</li>
+    </ol>
+  </div>
+  <img fxFlex fxFlex.gt-sm="50" src="/assets/cdd-diagram.svg" style="width: 80%" alt="CDD flow"/>
+</div>
+
+<div style="margin: 0 15% 0 15%;">
+  <h4>Type system incompatibilities</h4>
+  <p>SQL has really specific types, like <code>VARCHAR(20)</code>; almost no other language gets as specific.</p>
+  <p>Sure, you could use <a href="https://en.wikipedia.org/wiki/Abstract_data_type" target="_blank">ADTs</a> (implemented using your <a target="_blank" href="https://en.wikipedia.org/wiki/Record_(computer_science)">record</a> syntax), but this usually incurs a runtime overhead.</p>
+  <p>To avoid the tradeoff between runtime complexity and type information loss, additional type information&mdash;beyond what the target language/framework supports&mdash;is <em>added to the docstring</em>.</p>
+</div>
+
+<app-footer></app-footer>
