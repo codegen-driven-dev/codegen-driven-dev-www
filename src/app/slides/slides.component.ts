@@ -7,11 +7,11 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./slides.component.scss']
 })
 export class SlidesComponent implements OnInit {
-  currentSlide: number;
+  currentSlide: number = 1;
   noKeyBindSlides?: number[];
 
   // tslint:disable-next-line:variable-name
-  _totalSlides: number;
+  _totalSlides: number = 0;
 
   get totalSlides(): number {
     return this._totalSlides;
@@ -42,7 +42,7 @@ export class SlidesComponent implements OnInit {
               private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.route.fragment.subscribe((fragment?: string) =>
+    this.route.fragment.subscribe((fragment?: string | null) =>
       this.currentSlide = fragment == null ? 0 : parseInt(fragment, 10)
     );
   }
