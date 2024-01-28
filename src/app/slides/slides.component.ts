@@ -39,7 +39,8 @@ export class SlidesComponent implements OnInit {
   }
 
   constructor(private router: Router,
-              private route: ActivatedRoute) { }
+              private route: ActivatedRoute) {
+  }
 
   ngOnInit(): void {
     this.route.fragment.subscribe((fragment?: string | null) =>

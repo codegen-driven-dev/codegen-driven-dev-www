@@ -13,8 +13,10 @@
 </app-navbar>
 
 <div fxLayout="column" ngStyle.gt-xs="margin: 0 15% 0 15%;" ngStyle.lt-sm="margin: 0">
-  <section class="hero-image" style="margin-top: -200px" [innerHtml]="safeHtml" *ngIf="safeHtml" fxFlex="auto">
-  </section>
+  @if (safeHtml) {
+    <section class="hero-image" style="margin-top: -200px" [innerHtml]="safeHtml" fxFlex="auto">
+    </section>
+  }
 
   <section class="m-v-lg text-size-lg" fxFlex="auto">
     Stop using React Native, Flutter, etc. Write in one language; translate to others.

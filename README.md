@@ -1,7 +1,6 @@
 compilers.com.au
 ================
 [![License](https://img.shields.io/badge/license-Apache--2.0%20OR%20MIT-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-![David dependency status for latest release](https://david-dm.org/codegen-driven-dev/www.svg)
 ![GitHub Pages](https://github.com/codegen-driven-dev/www/workflows/GitHub%20Pages/badge.svg)
 
 Bunch of guides for Compiler Driven Development (CDD).
@@ -10,7 +9,7 @@ Bunch of guides for Compiler Driven Development (CDD).
 
 First [`npm i -g angular-cli-ghpages`](https://github.com/angular-schule/angular-cli-ghpages), then:
 
-    ng build --prod
+    ng build --configuration production
     cp README.md dist/compilers-www
     ngh --cname='compilers.com.au' --dir='dist/compilers-www' --repo='https://github.com/codegen-driven-dev/codegen-driven-dev.github.io' --branch='master' --message="$(git log -1 --pretty='%B')"
 

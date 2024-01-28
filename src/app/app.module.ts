@@ -19,4 +19,5 @@ import { SlidesComponent } from "./slides/slides.component";
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
+import { FlexLayoutModule } from 'ngx-flexible-layout';
 
 import { NavbarComponent } from './navbar.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -17,4 +18,5 @@ import { RouterModule } from '@angular/router';
     NavbarComponent
   ]
 })
-export class NavbarModule {}
+export class NavbarModule {
+}

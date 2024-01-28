@@ -11,4 +11,5 @@ import { SvgViewerComponent } from './svg-viewer.component';
   ],
   exports: [SvgViewerComponent]
 })
-export class SvgViewerModule {}
+export class SvgViewerModule {
+}

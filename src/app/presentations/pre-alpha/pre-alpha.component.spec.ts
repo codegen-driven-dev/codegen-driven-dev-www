@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { Feb2020Component } from './feb2020-1.component';
+import { PreAlphaComponent } from './pre-alpha.component';
 
-describe('Feb2020_1_Component', () => {
-  let component: Feb2020Component;
-  let fixture: ComponentFixture<Feb2020Component>;
+describe('PreAlpha_1_Component', () => {
+  let component: PreAlphaComponent;
+  let fixture: ComponentFixture<PreAlphaComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ Feb2020Component ]
+      declarations: [PreAlphaComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Feb2020Component);
+    fixture = TestBed.createComponent(PreAlphaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
