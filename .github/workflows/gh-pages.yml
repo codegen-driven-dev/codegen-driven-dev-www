@@ -32,5 +32,5 @@ jobs:
           git config --global user.email "$email"
           cname='compilers.com.au'
           ng build --configuration production --base-href 'https://'"$cname"
-          head -n3 README.md > 'dist/compilers-www/README.md'
+          head -n4 README.md > 'dist/compilers-www/README.md'
           npx angular-cli-ghpages --dir='dist/compilers-www' --cname="$cname" --repo='https://'"$GITHUB_TOKEN"'@github.com/codegen-driven-dev/codegen-driven-dev.github.io' --branch='master' --message="$MSG" --name="$name" --email="$email" --no-silent
