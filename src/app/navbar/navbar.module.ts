@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { FlexLayoutModule } from 'ngx-flexible-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { NavbarComponent } from './navbar.component';
 
