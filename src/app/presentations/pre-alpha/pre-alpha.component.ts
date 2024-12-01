@@ -2,9 +2,10 @@ import { AfterContentInit, Component } from '@angular/core';
 import { SlidesComponent } from '../../slides/slides.component';
 
 @Component({
-  selector: 'app-pre-alpha',
-  templateUrl: './pre-alpha.component.html',
-  styleUrls: ['./pre-alpha.component.scss']
+    selector: 'app-pre-alpha',
+    templateUrl: './pre-alpha.component.html',
+    styleUrls: ['./pre-alpha.component.scss'],
+    standalone: false
 })
 export class PreAlphaComponent extends SlidesComponent implements AfterContentInit {
   ngAfterContentInit() {
